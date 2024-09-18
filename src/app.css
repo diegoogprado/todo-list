@@ -1,0 +1,176 @@
+.app {
+    width: 100%;
+    color:#590820;
+    background: linear-gradient(90deg, hsla(46, 93%, 89%, 1) 0%, hsla(342, 83%, 38%, 1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 80vw;
+    max-width: 768px;
+    margin: 50px 0;
+    padding: 40px 30px;
+    border-radius: 15px;
+    background-color: #cafcd0;
+    display: flex;
+    flex-direction: column;
+}
+
+.divTitle {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-bottom: #590820 solid 2px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0rem 0 1.5rem ;
+}
+
+.divTitle input {
+    width: 100%;
+    padding: 5px;
+    margin: .5rem 0 1.5rem ;
+    border: #590820 solid 2px;
+    border-radius: 8px;
+}
+
+.divFilter {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.filterOptions {
+    display: flex;
+    border-bottom: #590820 solid 2px;
+    padding-bottom: 1.5rem;
+}
+
+.filterStatus {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.filterStatus select {
+    width: 100%;
+    padding: 5px;
+    border:#590820 solid 2px;
+    border-radius: 8px;
+}
+
+.filterButtons {
+    width: 100%;
+    display: flex;
+    justify-items: end;
+    gap: 15px;
+}
+
+.filterButtons button {
+    width: 50px;
+    padding: 5px;
+    background-color:#BDCB67 ;
+    color: #590820;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #590820 2px 2px 3px;
+    font-weight: 600;
+}
+
+.filterButtons button:hover {
+    cursor: pointer;
+    background-color:#590820 ;
+    color: #FDF1CB;
+    box-shadow: #FDF1CB 2px 2px 3px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: #590820 solid 2px;
+    margin-bottom: 1.5rem;
+}
+
+.singleCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDF1CB;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: #590820 2px 2px 3px;
+    margin-bottom: 1.5rem;
+}
+
+.cardAction button {
+    background-color:#CD124A ;
+    color: #FDF1CB;
+    box-shadow: #590820 2px 2px 3px;
+    margin-left: 10px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+}
+
+#completeBtn {
+    background-color: #2EA95D;
+    color: #FDF1CB;
+}
+
+#completeBtn:hover {
+    cursor: pointer;
+    background-color: #0E341C;
+}
+
+#exclusionBtn:hover {
+    cursor: pointer;
+    background-color: #590820;
+}
+
+.createTaskDiv {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.createTaskDiv input, .createTaskDiv select {
+    width: 100%;
+    padding: 5px;
+    border: #590820 solid 2px;
+    border-radius: 8px;
+}
+
+#createTask {
+    background-color: #BDCB67 ;
+    color: #590820;
+    box-shadow: #590820 2px 2px 3px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+}
+
+#createTask:hover {
+    cursor: pointer;
+    background-color: #363A1E;
+    color: #BDCB67;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .cardAction {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .filterOptions {
+        justify-content: space-between;
+    }
+}
