@@ -3,7 +3,7 @@ import "./app.css"
 import Cards from "./components/Cards"
 import CreateTaskDiv from "./components/CreateTaskDiv"
 import DivFilter from "./components/DivFilter"
-import DivTitle from "./components/divTitle"
+import DivTitle from "./components/DivTitle"
 import handleTasks from "./hooks/handleTasks"
 
 export default function App() {
